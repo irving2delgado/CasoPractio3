@@ -1,4 +1,7 @@
 $(document).ready(function() {
-    //Completa esta sección
-  });
-  
+  const model = new UserModel();
+  const view = new UserView();
+  const controller = new UserController(model, view);
+
+  controller.fetchAndDisplayUsers();
+});
